@@ -3,62 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Login Page</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <style>
-    /* CSS untuk menambahkan spasi di bawah konten */
-    .space-below {
-      margin-bottom: 10px; /* Atur nilai margin sesuai kebutuhan Anda */
-    }
-  </style>
 </head>
 <body>
-  <!-- Konten login page -->
-  <div class="container mt-5">
-    <div class="row justify-content-center">
-      <div class="col-md-6">
-        <div class="card">
-          <div class="card-header">
-            <h3 class="title">Hi, Welcome back</h3>
-            <h6 class="text-left">Login in to your account</h6>
-          </div>
-          <div class="card-body">
-            <!-- Form login -->
-            <form>
-              <p class="text-center"> Sign in with Email address</p>
-              <div class="form-group">
-                <label for="username">Username:</label>
-                <input type="text" class="form-control" id="username" placeholder="Enter your username">
-              </div>
-              <div class="form-group">
-                <label for="password">Password:</label>
-                <input type="password" class="form-control" id="password" placeholder="Enter your password">
-                <span class="password-toggle-icon"><i class="fas fa-eye"></i></span>
-              </div>
-              </div>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="container justify-content-left">
-                  <input type="checkbox" class="form-check-input" id="rememberMe">
-                  <label class="form-check-label" for="rememberMe">Remember Me</label>
+  <div class="container d-flex justify-content-center align-items-center">
+    <div class="border rounded-5 p-3 bg-white shadow box-area">
+        <div class="right-box">
+          <div class="row align-items-center">
+                <div class="header-text mb-4">
+                     <h2>Hi, Welcome back</h2>
+                     <p>Login in to your accout</p>
                 </div>
-                <a class="container text-right" href="#">Forgot Password?</a>
-              </div>
-              <div class="space-below"></div>
-              <button type="submit" class="btn btn-primary btn-block">Login</button>
-            </form>
-            <!-- Akhir form login -->
-            <div class="container text-right">
-                <p><a href="#">Don't have an account?</a></p>
-            </div>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Email address">
+                </div>
+                <div class="input-group mb-1">
+                    <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Password">
+                </div>
+                <div class="input-group mb-5 d-flex justify-content-between">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="formCheck">
+                        <label for="formCheck" class="form-check-label text-secondary"><small>Remember Me</small></label>
+                    </div>
+                    <div class="forgot">
+                        <small><a href="#">Forgot Password?</a></small>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <button class="btn btn-lg btn-primary w-100 fs-6">Login</button>
+                </div>
+                <div class="input-group mb-3">
+                    <button class="btn btn-lg btn-light w-100 fs-6"><img src="images/google.png" style="width:20px" class="me-2"><small>Sign In with Google</small></button>
+                </div>
+                <div class="space-below"></div>
+                <div class="row">
+                    <small>Don't have account? <a href="#">Sign Up</a></small>
+                </div>
           </div>
-        </div>
+       </div> 
       </div>
     </div>
   </div>
-  <img src="./lumba-lumba.jpeg" class="full-width right-aligned" alt="test foto">
-  <!-- Bootstrap JavaScript dan Popper.js (diperlukan untuk beberapa komponen Bootstrap) -->
+  <img src="images/lumba-lumba.jpeg" class="full-width right-aligned fs-6" alt="test foto">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
