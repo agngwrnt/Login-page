@@ -47,6 +47,26 @@ body {
   border-radius: 30px;
 }
 
+.password-toggle-icon {
+  position: absolute;
+  top: 55%;
+  right: 30px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.password-toggle-icon i:hover {
+  color: #000;
+}
+
+.password-toggle-icon i {
+  font-size: 18px;
+  line-height: 1;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+
 @media only screen and (max-width: 768px){
 
   .box-area{
