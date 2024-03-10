@@ -61,6 +61,12 @@ if (loginButton) {
             const enteredEmail = enteredEmailInput.value;
             const enteredPassword = enteredPasswordInput.value;
 
+            if (enteredEmail === "" || enteredPassword === "") {
+                console.log("Email or password cannot be empty");
+                alert("Email or password cannot be empty");
+                return;
+            }
+
             const user = users.find(person => person.Email === enteredEmail);
 
             if (user) {
